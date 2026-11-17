@@ -1,5 +1,14 @@
 def calcular_media_movil(datos: list[float], ventana: int) -> list[float]:
-    """Calcula la media móvil simple de una lista de números."""
+    """
+    Calcula la media móvil de una lista de temperaturas dadas.
+
+    Args:
+        temperaturas (list[float]): Una lista con los valores de las temperaturas (números decimales).
+        ventana (int): El tamaño de la ventana para calcular la media (ej. 3).
+
+    Returns:
+        list[float]: Una nueva lista con los valores suavizados de la media móvil.
+    """
     if ventana <= 0:
         raise ValueError("El tamaño de la ventana debe ser mayor a 0.")
 
